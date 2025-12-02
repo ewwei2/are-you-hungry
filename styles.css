@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+
+    figure.item {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.nav-links li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: color 0.25s ease;
+    padding-bottom: 6px;
+    font-family: inter;
+    font-size: 20px;
+}
+
+.nav-links li {
+display: inline-block;
+padding: 0px 20px;
+}
+
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: palegoldenrod;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.nav-links li a:hover {
+    color: palegoldenrod;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-links li a[aria-current="page"],
+.nav-links li a.highlight,
+.nav-links li.highlight a {
+    color: palegoldenrod;
+}
+
+.nav-links li a[aria-current="page"]::after,
+.nav-links li a.highlight::after,
+.nav-links li.highlight a::after {
+    transform: scaleX(1);
+}
+
+.big-text {
+    font-size: clamp(40px, 10vw, 80px);
+    font-family: inter;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-bottom: -8px;
+    padding: 0 10px;
+}
+
+.sub-text {
+    font-size: 30px;
+    font-family: inter;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    padding-left: 75px;
+    padding-right: 75px;
+    a:hover,
+    a:visited,
+    a:link,
+    a:active{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.notes {
+    font-size: 20px;
+    font-family: inter;
+    text-align: left;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-top: -50px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.big-text-link {
+    font-size: 110px;
+    font-family: inter;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-top: 0;
+
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.big-text-link:hover {
+    text-decoration: underline palegoldenrod;
+}
+
+a:link {
+    color: black
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: palegoldenrod;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+    transform: scaleX(1);
+}
+
+a:active {
+    color: grey;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+body.home {
+    justify-content: center;
+    padding-top: 0;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.stars {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.back{
+    padding-top: 350px;
+    font-family: inter;
+}
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+@media only screen and (max-width: 1200px){
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+    body{
+        width: 1000px;
+        margin: auto;
+    }
+
+    figure.item{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+    body{
+        width: 100%;
+    }
+
+    figure.item{
+        width: 600px;
+        height: 600px;
+    }
+
+}
